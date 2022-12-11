@@ -1,7 +1,6 @@
 # Developing a Simple Webserver
 ## AIM:
 To develop a simple webserver to display top 5 programming language.
-
 ## DESIGN STEPS:
 ### Step 1: 
 HTML content creation
@@ -12,8 +11,7 @@ Implementation using Python code
 ### Step 4:
 Serving the HTML pages.
 ### Step 5:
-Testing the webserver
-
+Testing the webserver.
 ## PROGRAM:
 ```
 from http.server import HTTPServer, BaseHTTPRequestHandler
@@ -40,12 +38,8 @@ httpd = HTTPServer(server_address, HelloHandler)
 print("my webserver is running.....")
 httpd.serve_forever()
 ```
-
 ## OUTPUT:
 ![output](./fig1.png)
 ![output](./fig2.png)
-
-
-
 ## RESULT:
 This program displays the top 5 programming language.
