@@ -26,11 +26,9 @@ content = """
 </head>
 <body>
 <h1>WELCOME TO MY SIMPLE WEBSERVER</h1>
-
 </body>
 </html>
 """
-
 class HelloHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request recieved")
