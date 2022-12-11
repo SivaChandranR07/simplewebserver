@@ -17,7 +17,6 @@ Testing the webserver
 ## PROGRAM:
 ```
 from http.server import HTTPServer, BaseHTTPRequestHandler
-
 content = """
 <!DOCTYPE html>
 <html>
@@ -36,13 +35,11 @@ class HelloHandler(BaseHTTPRequestHandler):
         self.send_header('Content-type', 'text/html; charset=utf-8')
         self.end_headers()
         self.wfile.write(content.encode())
-
 server_address = ('', 8080)
 httpd = HTTPServer(server_address, HelloHandler)
 print("my webserver is running.....")
 httpd.serve_forever()
 ```
-
 
 ## OUTPUT:
 ![output](./fig1.png)
