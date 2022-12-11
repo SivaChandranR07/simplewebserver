@@ -31,7 +31,6 @@ content = """
 </html>
 """
 
-
 class HelloHandler(BaseHTTPRequestHandler):
     def do_GET(self):
         print("request recieved")
